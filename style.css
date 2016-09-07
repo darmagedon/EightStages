@@ -1,0 +1,13 @@
+@font-face {
+	font-family: Muli;
+	src: url(fonts/Muli-ExtraLight.ttf);
+}
+
+
+body {
+	font-family: Muli;
+}
+
+.logo{
+	font-family: serif;
+}
