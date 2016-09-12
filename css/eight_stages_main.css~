@@ -1,13 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-*:after {
-    clear: both;
-    display: block;
-    content: "";
-}
+    *:after {
+        clear: both;
+        display: block;
+        content: "";
+    }
 
 ::-webkit-scrollbar {
     width: 12px;
@@ -22,18 +17,5 @@
 
 ::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.2);
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-body {
-    line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
 }
 

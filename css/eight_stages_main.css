@@ -1,21 +1,378 @@
-    *:after {
-        clear: both;
+.header {
+    background-color: #7dd8e8;
+}
+
+.logo {
+    width: 291px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.search-bar-wrapper {
+    display: none;
+    float: left;
+    clear: left;
+}
+
+.search-bar-wrapper .search-area {
+    float: left;
+    font-family: 'IstokWeb', Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 3px 3px 3px 8px;
+    width: 276px;
+}
+
+.search-bar-wrapper .search-button {
+    float: left;
+    font-family: 'IstokWeb', Arial, Helvetica, sans-serif;
+    background-color: #274f56;
+    color: white;
+    font-size: 9px;
+    border-radius: 7px;
+    border: none;
+    padding: 4px 9px 4px 9px;
+    margin-left: 7px;
+}
+
+.session-wrapper{
+    clear: left;
+    text-align: center;
+}
+
+.session-wrapper .profile-name{
+    display: block;
+    font-family: Muli;
+    font-size:15px;
+    font-weight: bold;
+}
+
+.session-wrapper .profile-menu{
+    display: block;
+    margin-top:5px;
+}
+
+.session-wrapper ul li {
+    font-family: IstokWeb;
+    font-size:11px;
+    display: inline-block;
+
+}
+
+.session-wrapper li:before {
+    content: "|";
+    margin: 0 6px;
+}
+.session-wrapper li:first-child:before {
+    content: "";
+}
+
+.session-wrapper a:hover {
+    color: white;
+}
+
+.navigation {
+    background-color: #f5f5f5;
+    height:40px;
+    font-family: Muli;
+    font-weight:bold;
+    font-size: 13px;
+    display: none;
+}
+
+.navigation .navigation-menu{
+    display: block;
+    float: left;
+}
+.navigation .navigation-menu a, .notification-bar a {
+    display: block;
+    line-height:40px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.navigation li, .notification-bar li{
+    float: left;
+}
+
+.navigation a:hover {
+    background-color: #9BF0FF;
+    color: black;
+}
+
+
+.notification-bar
+{
+    float:right;
+}
+
+.notification-bar a {
+    /*padding: 13px 20px;*/
+}
+
+.notification-bar li:last-child a {
+    color: #969696;
+}
+
+.notification-bar .icon-invites{
+    background-image: url("../images/invites.png");;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+}
+
+.notification-bar .icon-friends{
+    background-image: url("../images/friend-no-event.png");;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 25px;
+}
+
+.content {
+    margin-top:30px;
+    background-color: yellow;
+}
+
+.content .container {
+    background-image: url("../images/col-right-layout-background.png");
+    background-repeat: repeat-y;
+    background-color: red;
+
+}
+
+.col-right .heading,
+.col-left .heading,
+.col-l-left .heading,
+.col-r-right .heading{
+    font-family:Muli;
+    color: white;
+    background-color: #2fc1d9;
+    font-size: 13px;
+    font-weight:bold;
+    line-height:16px;
+    padding: 10px
+}
+
+.allfriends .main .top-bar{
+    display: none;
+    background-color: #f5f5f5;
+    font-family:Muli;
+    font-weight: bold;
+    margin-bottom:30px;
+}
+
+.top-bar .friend-type-wrapper{
+    border-bottom:solid 3px white;
+}
+
+.allfriends .main .top-bar .friend-type-wrapper li{
+    float: left;
+
+    font-size:13px;
+    border-right:solid 3px white;
+}
+
+.allfriends .main .top-bar .friend-type-wrapper li:last-child{
+    border:none;
+}
+
+
+.allfriends .friend-type-wrapper li a{
+    display: inline-block;
+    padding:17px 32px;
+
+}
+
+.allfriends  .top-bar li a:hover{
+    background-color: #2fc1d9;
+    color: white;
+}
+
+.allfriends .search-notification-wrapper{
+    font-size:12px;
+}
+
+.friend-list-wrapper li {
+    float: left;
+    margin-right:32px;
+}
+
+/*loop to 5 items*/
+.friend-list-wrapper li:nth-child(5n){
+    margin-right:0px;
+}
+
+.heading .text{
+    float: left;
+    width:70%;
+}
+.heading .icon
+{
+    float: right;
+    margin-top: 5px;
+}
+
+.sub-sections{
+    font-family: IstokWeb;
+    font-size:11px;
+    margin-top: 5px;
+}
+
+.sub-sections li{
+    display: block;
+}
+
+.sub-sections a{
+    padding:9px 10px 8px 10px;
+    display: block;
+}
+
+.sub-sections a:hover {
+    background-color: white;
+    color: black;
+}
+
+.sub-sections ul:last-child:after{
+    margin-bottom:22px;
+}
+
+
+.footer {
+    background-color: #dddddd;
+    margin-top: 25px;
+    padding: 15px;
+    font-family:IstokWeb;
+    font-weight:bold;
+    font-size:9px;
+    text-align: center;
+}
+
+.footer_menu {
+    display: inline-block;
+}
+
+.footer_menu li {
+    display: inline-block;
+    float: left;
+}
+
+.footer_menu li:after {
+    content: "\2022";
+    margin: 0 7px;
+    color: #979797;
+    font-size: 11px;
+    font-weight: bold;
+    display: inline-block;
+    clear: inherit;
+}
+
+.footer_menu li:last-child:after {
+    content: "";
+}
+
+.footer_menu li a {
+    display: inline-block;
+    color: #969696;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.footer_menu a:hover {
+    color: black;
+}
+
+.copyright {
+    clear: left;
+}
+
+.copyright span {
+    color: #969696;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+@media(min-width: 226px)
+{
+    .friend-list-wrapper li:nth-child(5n){
+        margin-right:32px;
+    }
+}
+
+
+@media(min-width: 768px)
+{
+    .logo {
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .search-bar-wrapper {
         display: block;
-        content: "";
+        float: left;
+        clear: none;
+        margin-top: 40px;
+        margin-left: 23px;
     }
 
-::-webkit-scrollbar {
-    width: 12px;
-    /* for vertical scrollbars */
-    height: 12px;
-    /* for horizontal scrollbars */
+    .search-notification-wrapper .search-bar-wrapper{
+        margin: 0px 0px;
+        background-color: white;
+        border-radius: 8px;
+        margin-top:9px;
+        margin-left: 10px;
+    }
+
+    .search-bar-wrapper .search-area {
+        width: 150px;
+    }
+
+    .session-wrapper{
+        float: right;
+        clear:none;
+        text-align: right;
+        margin-top: 26px;
+    }
+
+
+    .allfriends .main .top-bar{
+        display: block;
+    }
+
+
+
+    .friend-list-wrapper li:nth-child(5n){
+        margin-right:0px;
+    }
+
+    .footer_menu {
+        float: left;
+    }
+
+    .copyright {
+        clear: none;
+        float: right;
+    }
+
+
+
 }
 
-::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1);
-}
+@media (min-width: 992px)
+{
+    .search-bar-wrapper .search-area {
+        width: 276px;
+    }
 
-::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.2);
-}
+    .navigation{
+        display: block;
+    }
 
+    /*
+    .allfriends .main .friend-type-wrapper li a{
+        padding:17px 29px 17px 35px;
+    }
+    */
+
+}
