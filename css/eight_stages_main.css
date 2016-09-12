@@ -197,12 +197,29 @@
 .friend-list-wrapper li {
     float: left;
     margin-right:32px;
+    width:120px;
+    height:120px;
 }
 
+.friend-list-wrapper img{
+    display: block;
+    margin-bottom: 10px;
+}
+.friend-list-wrapper span{
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    width:100%;
+}
 /*loop to 5 items*/
 .friend-list-wrapper li:nth-child(5n){
     margin-right:0px;
 }
+
+/*.friend-list-wrapper li:nth-child(n+5){
+    margin-top:50px;
+}*/
 
 .heading .text{
     float: left;
@@ -293,10 +310,107 @@
     font-weight: bold;
 }
 
-@media(min-width: 226px)
+.login .main{
+    background: #7dd8e8;
+}
+
+.login .login-content{
+    margin: 0 auto;
+    display: table;
+}
+
+.login .login-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.login .welcome-wrapper{
+    margin-bottom: 15px;
+}
+
+.login .welcome-wrapper span{
+    font-family:IstokWeb;
+    font-size:16px;
+    color:white;
+}
+
+.login .error-box{
+    font-family:IstokWeb;
+    display: inline-block;
+    background: #e14820;
+    text-align: left;
+    color: white;
+    padding:10px;
+    font-size: 13px;
+    margin-top:20px;
+    margin-bottom:25px;
+}
+
+.login .form-wrapper .login-email,
+.login .login-password,
+.login .login-btn-wrapper .login-button{
+    border:none;
+    border-radius: 10px;
+    display: block;
+    padding: 5px;
+    font-family:IstokWeb;
+}
+.login .form-wrapper .login-email,
+
+.login .login-password{
+    margin: 0px 0px 14px 0px;
+    width:235px;
+    font-size:14px;
+}
+.login .login-btn-wrapper{
+    display: table;
+}
+
+.login .login-btn-wrapper .login-button{
+    background: #274f56;
+    float: left;
+    margin-right: 10px;
+    color: white;
+    font-size:12px;;
+}
+.login .login-btn-wrapper span{
+    font-family:IstokWeb;
+    font-size:13px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.login .problem-wrapper{
+    margin-bottom: 20px;
+    margin-top: 18px;
+    font-family:IstokWeb;
+}
+
+.login .problem-wrapper .problem{
+    font-size:14px;
+    font-weight:bold;
+    color:white;
+}
+
+.login .problem-wrapper .help-email{
+    font-size:14px;
+}
+
+.login .join-eightstages{
+    font-family:Muli;
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+@media(min-width: 726px)
 {
-    .friend-list-wrapper li:nth-child(5n){
+  /*  .friend-list-wrapper li:nth-child(5n){
         margin-right:32px;
+    }*/
+
+    .friend-list-wrapper li:nth-child(n+6){
+        margin-top:50px;
     }
 }
 

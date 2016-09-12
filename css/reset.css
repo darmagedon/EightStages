@@ -37,3 +37,13 @@ ol, ul {
     list-style: none;
 }
 
+html,
+body,
+.col-1-layout,
+.login,
+.main,
+.login-content,
+.login-wrapper{
+    height: 100%;
+}
+
