@@ -1,5 +1,6 @@
 .header {
     background-color: #7dd8e8;
+    padding:10px 0;
 }
 
 .logo {
@@ -37,26 +38,26 @@
     margin-left: 7px;
 }
 
-.session-wrapper{
+.session-wrapper {
     clear: left;
     text-align: center;
 }
 
-.session-wrapper .profile-name{
+.session-wrapper .profile-name {
     display: block;
     font-family: Muli;
-    font-size:15px;
+    font-size: 15px;
     font-weight: bold;
 }
 
-.session-wrapper .profile-menu{
+.session-wrapper .profile-menu {
     display: block;
-    margin-top:5px;
+    margin-top: 5px;
 }
 
 .session-wrapper ul li {
     font-family: IstokWeb;
-    font-size:11px;
+    font-size: 11px;
     display: inline-block;
 
 }
@@ -65,6 +66,7 @@
     content: "|";
     margin: 0 6px;
 }
+
 .session-wrapper li:first-child:before {
     content: "";
 }
@@ -75,25 +77,26 @@
 
 .navigation {
     background-color: #f5f5f5;
-    height:40px;
+    height: 40px;
     font-family: Muli;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 13px;
     display: none;
 }
 
-.navigation .navigation-menu{
+.navigation .navigation-menu {
     display: block;
     float: left;
 }
+
 .navigation .navigation-menu a, .notification-bar a {
     display: block;
-    line-height:40px;
-    padding-left:10px;
-    padding-right:10px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.navigation li, .notification-bar li{
+.navigation li, .notification-bar li {
     float: left;
 }
 
@@ -102,10 +105,8 @@
     color: black;
 }
 
-
-.notification-bar
-{
-    float:right;
+.notification-bar {
+    float: right;
 }
 
 .notification-bar a {
@@ -116,14 +117,14 @@
     color: #969696;
 }
 
-.notification-bar .icon-invites{
-    background-image: url("../images/invites.png");;
+.icon-invites {
+    background-image: url("../images/invites.png");
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 20px;
 }
 
-.notification-bar .icon-friends{
+.notification-bar .icon-friends {
     background-image: url("../images/friend-no-event.png");;
     background-repeat: no-repeat;
     background-position: left center;
@@ -131,118 +132,155 @@
 }
 
 .content {
-    margin-top:30px;
-    background-color: yellow;
+    margin-top: 30px;
+    /*background-color: yellow;*/
 }
 
-.content .container {
+.allfriends .content .col-2-right-layout .main {
+    width: 730px;
+}
+
+.allfriends .content .container {
     background-image: url("../images/col-right-layout-background.png");
     background-repeat: repeat-y;
-    background-color: red;
+    /*background-color: red;*/
 
 }
 
 .col-right .heading,
 .col-left .heading,
 .col-l-left .heading,
-.col-r-right .heading{
-    font-family:Muli;
+.col-r-right .heading {
+    font-family: Muli;
     color: white;
     background-color: #2fc1d9;
     font-size: 13px;
-    font-weight:bold;
-    line-height:16px;
+    font-weight: bold;
+    line-height: 16px;
     padding: 10px
 }
 
-.allfriends .main .top-bar{
+.allfriends .main .top-bar {
     display: none;
     background-color: #f5f5f5;
-    font-family:Muli;
+    font-family: Muli;
     font-weight: bold;
-    margin-bottom:30px;
 }
 
-.top-bar .friend-type-wrapper{
-    border-bottom:solid 3px white;
+.top-bar .friend-type-wrapper {
+    border-bottom: solid 3px white;
 }
 
-.allfriends .main .top-bar .friend-type-wrapper li{
+.allfriends .main .top-bar .friend-type-wrapper li {
     float: left;
 
-    font-size:13px;
-    border-right:solid 3px white;
+    font-size: 13px;
+    border-right: solid 3px white;
 }
 
-.allfriends .main .top-bar .friend-type-wrapper li:last-child{
-    border:none;
+.allfriends .main .top-bar .friend-type-wrapper li:last-child {
+    border: none;
 }
 
-
-.allfriends .friend-type-wrapper li a{
+.allfriends .friend-type-wrapper li a {
     display: inline-block;
-    padding:17px 32px;
+    padding: 17px 32px;
 
 }
 
-.allfriends  .top-bar li a:hover{
+.allfriends .top-bar li a:hover {
     background-color: #2fc1d9;
     color: white;
 }
 
-.allfriends .search-notification-wrapper{
-    font-size:12px;
+.allfriends .search-notification-wrapper {
+    font-size: 12px;
 }
 
-.friend-list-wrapper li {
+.allfriends .friend-list-wrapper {
+    margin-top: 6px;
+    background: url("../images/friendlist-bg.png");
+    background-repeat: repeat;
+    padding-bottom: 27px;
+}
+
+.allfriends .friend-list-wrapper li {
+    position: relative;
     float: left;
-    margin-right:32px;
-    width:120px;
-    height:120px;
+    margin-right: 32px;
+    width: 120px;
+    margin-top: 24px;
 }
 
-.friend-list-wrapper img{
+.allfriends .friend-list-wrapper img {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
-.friend-list-wrapper span{
+
+.allfriends .friend-list-wrapper .friend-option{
+    position: absolute;
+    right: 5px;
+    bottom: 30px;
+}
+
+.allfriends .friend-list-wrapper span{
+    font-family: IstokWeb;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.allfriends .friend-list-wrapper span a{
+
+    display: inline-block;
+    background: rgba(255,255,255,0.8);
+    padding:8px;
+    border-radius:8px;
+}
+
+.allfriends .friend-list-wrapper span a:hover{
+    background:#274f56;
+    color:white;
+}
+
+.allfriends .friend-list-wrapper div span {
     font-family: Arial;
     font-size: 12px;
     font-weight: bold;
     display: block;
-    width:100%;
+    width: 100%;
 }
+
 /*loop to 5 items*/
-.friend-list-wrapper li:nth-child(5n){
-    margin-right:0px;
+.allfriends .friend-list-wrapper li:nth-child(5n) {
+    margin-right: 0px;
 }
 
 /*.friend-list-wrapper li:nth-child(n+5){
     margin-top:50px;
 }*/
 
-.heading .text{
+.heading .text {
     float: left;
-    width:70%;
+    width: 70%;
 }
-.heading .icon
-{
+
+.heading .icon {
     float: right;
     margin-top: 5px;
 }
 
-.sub-sections{
+.sub-sections {
     font-family: IstokWeb;
-    font-size:11px;
+    font-size: 11px;
     margin-top: 5px;
 }
 
-.sub-sections li{
+.sub-sections li {
     display: block;
 }
 
-.sub-sections a{
-    padding:9px 10px 8px 10px;
+.sub-sections a {
+    padding: 9px 10px 8px 10px;
     display: block;
 }
 
@@ -251,18 +289,17 @@
     color: black;
 }
 
-.sub-sections ul:last-child:after{
-    margin-bottom:22px;
+.sub-sections ul:last-child:after {
+    margin-bottom: 22px;
 }
-
 
 .footer {
     background-color: #dddddd;
     margin-top: 25px;
     padding: 15px;
-    font-family:IstokWeb;
-    font-weight:bold;
-    font-size:9px;
+    font-family: IstokWeb;
+    font-weight: bold;
+    font-size: 9px;
     text-align: center;
 }
 
@@ -310,118 +347,389 @@
     font-weight: bold;
 }
 
-.login .main{
-    background: #7dd8e8;
-}
-
-.login .login-content{
+.login .login-content {
     margin: 0 auto;
     display: table;
 }
 
-.login .login-wrapper{
+.login .login-wrapper {
     display: table-cell;
     vertical-align: middle;
 }
 
-.login .welcome-wrapper{
+.login .welcome-wrapper {
     margin-bottom: 15px;
 }
 
-.login .welcome-wrapper span{
-    font-family:IstokWeb;
-    font-size:16px;
-    color:white;
+.login .welcome-wrapper span {
+    font-family: IstokWeb;
+    font-size: 16px;
+    color: white;
 }
 
-.login .error-box{
-    font-family:IstokWeb;
+.login .error-box {
+    font-family: IstokWeb;
     display: inline-block;
     background: #e14820;
     text-align: left;
     color: white;
-    padding:10px;
+    padding: 10px;
     font-size: 13px;
-    margin-top:20px;
-    margin-bottom:25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 .login .form-wrapper .login-email,
 .login .login-password,
-.login .login-btn-wrapper .login-button{
-    border:none;
+.login .login-btn-wrapper .login-button {
+    border: none;
     border-radius: 10px;
     display: block;
     padding: 5px;
-    font-family:IstokWeb;
+    font-family: IstokWeb;
 }
-.login .form-wrapper .login-email,
 
-.login .login-password{
+.login .form-wrapper .login-email,
+.login .login-password {
     margin: 0px 0px 14px 0px;
-    width:235px;
-    font-size:14px;
+    width: 235px;
+    font-size: 14px;
 }
-.login .login-btn-wrapper{
+
+.login .login-btn-wrapper {
     display: table;
 }
 
-.login .login-btn-wrapper .login-button{
+.login .login-btn-wrapper .login-button {
     background: #274f56;
     float: left;
     margin-right: 10px;
     color: white;
-    font-size:12px;;
+    font-size: 12px;;
 }
-.login .login-btn-wrapper span{
-    font-family:IstokWeb;
-    font-size:13px;
+
+.login .login-btn-wrapper span {
+    font-family: IstokWeb;
+    font-size: 13px;
     display: table-cell;
     vertical-align: middle;
 }
 
-.login .problem-wrapper{
+.login .problem-wrapper {
     margin-bottom: 20px;
     margin-top: 18px;
-    font-family:IstokWeb;
+    font-family: IstokWeb;
 }
 
-.login .problem-wrapper .problem{
-    font-size:14px;
-    font-weight:bold;
-    color:white;
+.login .problem-wrapper .problem {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
 }
 
-.login .problem-wrapper .help-email{
-    font-size:14px;
+.login .problem-wrapper .help-email {
+    font-size: 14px;
 }
 
-.login .join-eightstages{
-    font-family:Muli;
-    font-size:18px;
-    font-weight:bold;
+.login .join-eightstages {
+    font-family: Muli;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.entry-page .col-2-right-layout .col-right {
+    width: 230px;
+    /*height: 500px;*/
+    /*border:solid 1px black;*/
 }
 
 
-@media(min-width: 726px)
-{
-  /*  .friend-list-wrapper li:nth-child(5n){
-        margin-right:32px;
-    }*/
 
-    .friend-list-wrapper li:nth-child(n+6){
-        margin-top:50px;
+.entry-page .profile-picture {
+    float: left;
+    margin-right: 30px;
+    display: none;
+}
+
+.entry-page .profile-picture img {
+    display: block;
+}
+
+.entry-page .profile-picture span {
+    background: #f7f7f7;
+    border-radius: 15px;
+    font-family: IstokWeb;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 23px;
+    padding-top: 10px;
+}
+
+
+/*
+.entry-page .profile-info {
+    float: left;
+    width:77%;
+}
+*/
+
+.entry-page .profile-info span,
+.entry-page .profile-info ul li a {
+    font-family: IstokWeb;
+    font-size: 10px;
+    font-weight: bold;
+    color: #727272;
+}
+
+.entry-page .profile-info h2 {
+    font-family: Muli;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.entry-page .profile-info p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Muli;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.entry-page .profile-info ul {
+    margin-top: 5px;
+    padding: 5px 0;
+    border-bottom: 1px solid #d8d8d8;
+    border-top: 1px solid #d8d8d8;
+}
+
+.entry-page .profile-info ul li {
+    float: left;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.entry-page .feeds {
+    margin-top: 25px;
+    padding: 25px 40px;
+    border: 1px solid #f2f2f2;
+}
+
+.entry-page .feeds h3 {
+    font-family: Muli;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.entry-page .feeds .post {
+    border-top: 2px solid #f2f2f2;
+    padding-top: 20px;
+}
+
+.entry-page .feeds div:first-child {
+    border-top: 0px;
+    padding-top: 0px;
+}
+
+.entry-page .feeds .post h3 a {
+    color: #b66c23;
+    font-weight: 600;
+    color: #b46c22;
+}
+
+.entry-page .feeds .post ul li {
+    float: left;
+    color: #9d9d9d;
+    font-size: 10px;
+}
+
+.entry-page .feeds .post li a {
+    color: #7dd9e8;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.entry-page .feeds .post li:after {
+    content: "|";
+    margin: 0 5px;
+    clear: inherit;
+    display: inline-block;
+}
+
+.entry-page .feeds .post li:last-child:after {
+    content: " ";
+}
+
+.entry-page .feeds .post p {
+    font-family: IstokWeb;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.entry-page .feeds .post li a:hover {
+    color: black;
+}
+
+.entry-page .feeds .post input {
+    border: none;
+    background: #7dd9e8;
+    padding: 0 6px;
+    line-height: 20px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.entry-page .feeds .post .notification a {
+    font-family: Muli;
+    font-size: 11px;
+    font-weight: bold;
+    color: #7dd9e8;
+    display: block;
+}
+
+.entry-page .content .container {
+    background-image: url("../images/entry-1-px.png");
+    background-repeat: repeat-y;
+    /*background-color: red;*/
+}
+
+.entry-page .browse-topic-boxes img {
+    display: block;
+}
+
+.entry-page .browse-topic-boxes span {
+    font-family: IstokWeb;
+    font-size: 12px;
+    font-weight: bold;
+
+    background: #b46c22;
+    display: block;
+    height: 35px;
+    padding-left: 15px;
+}
+
+.entry-page .browse-topic-boxes span a {
+    display: block;
+    line-height: 35px;
+    color: white;
+}
+
+.entry-page .browse-topic-boxes .icon-invites {
+    background-image: url("../images/invites-no-event.png");;
+}
+
+.entry-page .total-entries {
+    margin-top: 30px;
+}
+
+.entry-page .total-entries input {
+    margin-left: 10px;
+    border: none;
+    display: inline-block;
+    font-family: IstokWeb;
+    font-size: 13px;
+    background: #7dd9e8;
+    padding: 0 15px;
+    line-height: 28px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+}
+
+.entry-page .total-entries a {
+    border: none;
+    display: inline-block;
+    font-family: IstokWeb;
+    font-size: 13px;
+    background: #7dd9e8;
+    padding: 0 15px;
+    line-height: 28px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+}
+
+.entry-page .total-entries .heading-topic {
+    margin-left: 10px;
+    font-family: Muli;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 5px double #bbbbbb;
+    margin-bottom: 10px;
+}
+
+.entry-page .total-entries ul li a {
+    background: none;
+    color: #9d9d9d;
+    font-size: 10px;
+    display: block;
+}
+
+.entry-page .total-entries ul li a b {
+    color: #b46c22;
+    font-size: 14px;
+    display: block;
+    line-height: 1.5;
+}
+
+.entry-page .total-entries ul li a span {
+    border-bottom: none;
+    color: #7dd9e8;
+    font-size: 12px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.entry-page .total-entries ul li a:hover {
+    background: #ffffff;
+    border-radius: 0;
+}
+
+@media (min-width: 726px) {
+    /*  .friend-list-wrapper li:nth-child(5n){
+          margin-right:32px;
+      }*/
+
+    .entry-page .col-2-right-layout .main {
+        width: 690px;
+        /*height: 500px;*/
+        /*border:solid 1px black;*/
+    }
+
+    .entry-page .profile-info {
+        float: left;
+        width:77%;
+    }
+
+    .entry-page .profile-picture{
+        display: block;
+    }
+
+    .header{
+        padding:0;
+    }
+    .friend-list-wrapper li:nth-child(n+6) {
+        margin-top: 51px;
     }
 }
 
-
-@media(min-width: 768px)
-{
+@media (min-width: 768px) {
     .logo {
         float: left;
         margin-top: 20px;
         margin-bottom: 15px;
     }
+
     .search-bar-wrapper {
         display: block;
         float: left;
@@ -430,11 +738,11 @@
         margin-left: 23px;
     }
 
-    .search-notification-wrapper .search-bar-wrapper{
+    .search-notification-wrapper .search-bar-wrapper {
         margin: 0px 0px;
         background-color: white;
         border-radius: 8px;
-        margin-top:9px;
+        margin-top: 9px;
         margin-left: 10px;
     }
 
@@ -442,22 +750,19 @@
         width: 150px;
     }
 
-    .session-wrapper{
+    .session-wrapper {
         float: right;
-        clear:none;
+        clear: none;
         text-align: right;
         margin-top: 26px;
     }
 
-
-    .allfriends .main .top-bar{
+    .allfriends .main .top-bar {
         display: block;
     }
 
-
-
-    .friend-list-wrapper li:nth-child(5n){
-        margin-right:0px;
+    .friend-list-wrapper li:nth-child(5n) {
+        margin-right: 0px;
     }
 
     .footer_menu {
@@ -469,17 +774,14 @@
         float: right;
     }
 
-
-
 }
 
-@media (min-width: 992px)
-{
+@media (min-width: 992px) {
     .search-bar-wrapper .search-area {
         width: 276px;
     }
 
-    .navigation{
+    .navigation {
         display: block;
     }
 
